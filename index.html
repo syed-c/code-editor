@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>Code Editor</title>
+</head>
+<body>
+  <div class="container">
+    <div class="right">
+      <label>HTML</label>
+      <textarea id="html" onkeyup="run()"></textarea>
+      <label>CSS</label>
+      <textarea id="css" onkeyup="run()"></textarea>
+      <label>JAVASCRIPT</label>
+      <textarea id="js" onkeyup="run()"></textarea>
+    </div>
+    <div class="left">
+      <label id="out">OUTPUT</label>
+      <iframe id="output"></iframe>
+    </div>
+  </div>
+</body>
+</html>
